@@ -1,6 +1,15 @@
-export default function ItemListContainer(){
+import React from 'react';
+
+export default class ItemListContainer extends React.Component {
     
-    return(
-        <img style= {{margin: 'right',width: '50px'}} src="https://www.pngrepo.com/download/45922/shopping-cart.png" alt="" />
-    )
-}
+        state = {
+            greeting : "Greeting Entregable clase 2"
+        }
+        render(){
+            return(
+                <div><h1>{this.state.greeting}</h1></div>
+            )
+        }
+
+        
+    }
